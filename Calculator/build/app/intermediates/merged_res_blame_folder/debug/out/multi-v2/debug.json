@@ -499,7 +499,7 @@
             "outputFile": "com.example.flutter_application_2.app-merged_res-26:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\user\\Desktop\\flutter_application_2\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\user\\Desktop\\mobile\\Calculator\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -1218,7 +1218,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\user\\Desktop\\flutter_application_2\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\user\\Desktop\\mobile\\Calculator\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
