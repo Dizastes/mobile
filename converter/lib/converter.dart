@@ -68,8 +68,8 @@ class _ConverterState extends State<Converter> {
       backgroundColor: const Color.fromARGB(250, 210, 250, 210),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(250, 26, 64, 25),
-        //title: const Text(//info['name'].toString(),
-           // style: TextStyle(color: Color.fromARGB(250, 210, 250, 210))),
+        title: Text(info['name'],
+           style: TextStyle(color: Color.fromARGB(250, 210, 250, 210))),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
