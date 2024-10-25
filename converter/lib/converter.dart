@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class Converter extends StatefulWidget {
   const Converter({super.key});
@@ -82,8 +83,10 @@ class _ConverterState extends State<Converter> {
                 SizedBox(
                   width: 240,
                   child: TextField(
+                    inputFormatters: [FilteringTextInputFormatter(RegExp(r'^\d+\.?\d*'), allow: true)],
                     onChanged: (value) => {
                       setState(() {
+                        if (value ==''){value = '0';}
                         str = value;
                       })
                     },
