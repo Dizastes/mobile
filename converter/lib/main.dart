@@ -39,8 +39,8 @@ class _HomeState extends State<Home> {
   Map<String, Map<String, dynamic>> values = {
     '/lenght': {
       'name': 'ДЛИННА',
-      'unit': ['см', 'м', 'км'],
-      'k': [100, 1, 0.001]
+      'unit': ['дюйм', 'м', 'фут'],
+      'k': [39.4, 1, 3.28]
     },
     '/square': {
       'name': 'ПЛОЩАДЬ',
