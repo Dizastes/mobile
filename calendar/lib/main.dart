@@ -147,13 +147,41 @@ class _CalendarState extends State<Calendar> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  selectedDate.year.toString(),
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(250, 26, 64, 25)),
-                )
+                // Text(
+                //   selectedDate.year.toString(),
+                //   style: TextStyle(
+                //       fontWeight: FontWeight.bold,
+                //       color: Color.fromARGB(250, 26, 64, 25)),
+                // ),
+                IconButton(
+                    onPressed: () {
+                      setState(() {
+                        selectedDate =
+                            DateTime(selectedDate.year-1);
+                      });
+                    },
+                    icon: Icon(Icons.arrow_back,
+                        color: Color.fromARGB(250, 26, 64, 25))),
+                SizedBox(
+                    width: 100,
+                    child: Center(
+                      child: Text(
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Color.fromARGB(250, 26, 64, 25)),
+                          selectedDate.year.toString(),),
+                    )),
+                IconButton(
+                    onPressed: () {
+                      setState(() {
+                        selectedDate =
+                            DateTime(selectedDate.year+1);
+                      });
+                    },
+                    icon: Icon(Icons.arrow_forward,
+                        color: Color.fromARGB(250, 26, 64, 25))),
               ],
+              
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
